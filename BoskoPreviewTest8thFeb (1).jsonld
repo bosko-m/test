@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "BoskoPreviewTest8thFeb",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBUODAsLDBkSEw8VHhsgHx4bHR0hJTApISMtJB0dKjkqLTEzNjY2ICg7Pzo0PjA1NjP/2wBDAQkJCQwLDBgODhgzIh0iMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzP/wAARCANSA9ADASIAAhEBAxEB/8QAHAABAAEFAQEAAAAAAAAAAAAAAAECBAUGBwMI/8QAQBAAAgEDAwIFAwIFAwMDAwQDAAECAwQRBQYhMUESUWFxkQcTgRQiFRYyUqFCQ1MjM7EXwfBicpIkNEThVILR/8QAGwEBAQEBAQEBAQAAAAAAAAAAAAECAwQFBgf/xAAmEQEBAAICAgMBAQEBAQEBAQAAAQIRAxIhMQQTQVEFFGEiMhVx/9oADAMBAAIRAxEAPwDsL6sB9WD0sgACAAAAAAAAAAAAAAAAAAAAAAAAoSQRkBknJANaDJJBJEMev4I5XbBLbSeFz5lveXlCyt3UrTSws8kt1C3T38Sg25NJJZy+ho26fqFZaE504TTqZaaXPJqW7/qdNynY6e8yeYto0Ww0a81q7/UX8pSjJ5wzzcnLqJctLrWd2avue8lToSqRpyfVNrguNK2lCLVW7k5zfLy28mw2Wl2tlBRhBZXpyXrSby+PI8HJy23xXHLKvO3t6FtFRp0oxWOyR7ty6ppryKcErp1wcMs7WLlTKfXhjPlkjjPTIOV8pbRjAAjIADSgxyASrsAANgACCJIRIAAACMZJIAJpc4yxJ+NYbaXoBjAl1TaIpL18slFWlSrLwzgnx5HoHjyOuOeq1LY1zVtrW16m4RUZPo0sGsysdY29cKra1qjjF5wmzpXDSyyiVGFWLjOOU/NHow57HXHNj9r/AFWr0pwttSU1h4bkda0rcNhrFKEqFWLbWTimsbYoXScqSUXjqka9bXms7WvE6"
+    },
+    "motivations": "Motivations",
+    "objectives": "Objectives",
+    "paymentAddress": "addr_test1qpdjjnwapqwd24tm699lgn3e2lc7v8ldvlm7wyc9kvcflkkkk8s6kkv0w440auer64klhcksk2uj39hhrcjpstfsty3qq3zs86",
+    "qualifications": "Qualifications"
+  }
+}
